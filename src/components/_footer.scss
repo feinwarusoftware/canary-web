@@ -1,9 +1,18 @@
 footer {
-  bottom: 0;
+  margin-top: -111px;
   width: 100%;
   overflow: hidden;
   position: relative;
   color: $darkgrey;
+
+  @include media-breakpoint-down(md) {
+    margin-top: -200px;
+  }
+
+  .row {
+    align-items: center;
+    justify-content: center;
+  }
 
   .swoosh {
     margin: -3px;

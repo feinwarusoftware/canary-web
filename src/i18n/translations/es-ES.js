@@ -1,7 +1,7 @@
 export default {
   // Language Selector Info
-  language: "English (UK)",
-  flag: "United_Kingdom",
+  language: "Espanol",
+  flag: "Spain",
 
   //Header
   Slogan: "The open-source music player for <b>everyone</b>",
