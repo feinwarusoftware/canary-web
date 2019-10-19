@@ -1,0 +1,81 @@
+import React from "react"
+import i18n from "../i18n";
+import { Trans } from "react-i18next";
+
+export default function Footer() {
+  return (
+<footer>
+          <div className="footer-contents">
+            <div className="container">
+              <div className="row align-items-center justify-content-center justify-content-sm-start">
+                <div className="col-8 col-sm-12 col-md-6 col-lg-3 mt-5 mt-md-0 order-last order-md-0">
+                  <img
+                    draggable="false"
+                    className="img-fluid mx-auto px-0 px-sm-5 pl-md-0 px-lg-0 px-xl-4 mb-3"
+                    alt=""
+                    src={require("../static/img/feinwaru_logo.svg")}
+                  />
+                  <p>
+                    &copy; 2017 - {new Date().getFullYear()} <Trans>Copyright</Trans>
+                  </p>
+                </div>
+                <div className="col-8 col-sm-6 col-lg-3">
+                  <h2>{i18n.t("About Feinwaru").split(" ").slice(0, -1).join(" ").toUpperCase()}</h2>
+                  <h1>{i18n.t("About Feinwaru").split(" ").pop().toUpperCase()}</h1>
+                  <ul>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/soontm"><Trans>Our Team</Trans></a>
+                    </li>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/soontm"><Trans>Branding</Trans></a>
+                    </li>
+                    <li>
+                      <a href="https://discord.feinwaru.com/">Discord</a>
+                    </li>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/soontm"><Trans>Careers</Trans></a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-8 col-sm-6 col-lg-3">
+                  <h2>{i18n.t("Our Projects").split(" ").slice(0, -1).join(" ").toUpperCase()}</h2>
+                  <h1>{i18n.t("Our Projects").split(" ").pop().toUpperCase()}</h1>
+                  <ul>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/">AWESOM-O</a>
+                    </li>
+                    <li>
+                      <a href="https://sppd.feinwaru.com/">SPPD</a>
+                    </li>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/soontm"><Trans>SPPD Mobile</Trans></a>
+                    </li>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/soontm"><Trans>more...</Trans></a>
+                    </li>
+                  </ul>
+                </div>
+                <div className="col-8 col-sm-6 col-lg-3">
+                  <h2>{i18n.t("Extra Resources").split(" ").slice(0, -1).join(" ").toUpperCase()}</h2>
+                  <h1>{i18n.t("Extra Resources").split(" ").pop().toUpperCase()}</h1>
+                  <ul>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/docs/welcome"><Trans>Help & Support</Trans></a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/feinwarusoftware/sppd"><Trans>Developers</Trans></a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/feinwarusoftware/sppd/issues/new"><Trans>Feedback</Trans></a>
+                    </li>
+                    <li>
+                      <a href="https://awesomo.feinwaru.com/soontm"><Trans>Terms & Privacy</Trans></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+  )
+}
