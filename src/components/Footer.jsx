@@ -9,12 +9,12 @@ export default function Footer() {
         <div className="container">
           <div className="row align-items-center justify-content-center justify-content-sm-start">
             <div className="col-8 col-sm-12 col-md-6 col-lg-3 mt-5 mt-md-0 order-last order-md-0">
-              <img
+              <a href="https://feinwaru.com"><img
                 draggable="false"
                 className="img-fluid mx-auto px-0 px-sm-5 pl-md-0 px-lg-0 px-xl-4 mb-3"
                 alt=""
                 src={require("../static/img/feinwaru_logo.svg")}
-              />
+              /></a>
               <p>
                 &copy; 2017 - {new Date().getFullYear()} {t("Copyright")}
               </p>
@@ -48,10 +48,10 @@ export default function Footer() {
                   <a href="https://sppd.feinwaru.com/">SPPD</a>
                 </li>
                 <li>
-                  <a href="https://awesomo.feinwaru.com/soontm">{t("SPPD Mobile")}</a>
+                  <a href="https://awesomo.feinwaru.com/soontm">Canary</a>
                 </li>
                 <li>
-                  <a href="https://awesomo.feinwaru.com/soontm">{t("more...")}</a>
+                  <a href="https://feinwaru.com">{t("more...")}</a>
                 </li>
               </ul>
             </div>
